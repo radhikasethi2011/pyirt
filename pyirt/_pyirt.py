@@ -6,10 +6,10 @@ from .logger import Logger
 
 def irt(data_src,
         dao_type='memory',
-        theta_bnds=[-4, 4], num_theta=11,
-        alpha_bnds=[0.25, 2], beta_bnds=[-2, 2], in_guess_param={},
+        theta_bnds=[0, 1], num_theta=11,
+        alpha_bnds=[0.1, 5], beta_bnds=[0, 10], in_guess_param={},
         model_spec='2PL',
-        max_iter=10, tol=1e-3, nargout=2,
+        max_iter=1000, tol=1e-3, nargout=2,
         is_parallel=False, num_cpu=6, check_interval=60,
         mode='debug', log_path=None):
 
